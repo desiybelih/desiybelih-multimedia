@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Desiybelih Multimedia Production - Creativity. Ethics. Speed." />
+  <title>Desiybelih Multimedia Production</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Desiybelih Logo" class="logo" />
+    <h1>Desiybelih Multimedia Production</h1>
+    <p class="slogan">CREATIVITY. ETHICS. SPEED.</p>
+  </header>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>We are a creative production company based in Ethiopia offering film production, photography, music videos, commercials, graphic design, documentaries, event organization, TV episodes, training and consultancy, and radio drama. Our strength lies in fast delivery, ethical storytelling, and AI-assisted creativity.</p>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Film Production</li>
+      <li>Photography</li>
+      <li>Music Videos</li>
+      <li>Commercials</li>
+      <li>Graphic Design</li>
+      <li>Documentaries</li>
+      <li>Event Organization</li>
+      <li>TV Episodes</li>
+      <li>Training & Consultancy</li>
+      <li>Radio Drama</li>
+    </ul>
+  </section>
+
+  <section class="clients">
+    <h2>Our Partners</h2>
+    <div class="logos">
+      <img src="assets/WorldBank_Logo.png" alt="World Bank" />
+      <img src="assets/WFP.png" alt="WFP" />
+      <img src="assets/GIZ.png" alt="GIZ" />
+      <img src="assets/SelfHelpAfrica.png" alt="Self Help Africa" />
+      <img src="assets/Mastercard.png" alt="Mastercard Foundation" />
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <h2>Featured Projects</h2>
+    <ul>
+      <li><a href="https://youtu.be/xMwf9XYIOxE" target="_blank">Ayda Ashenafi – Fana Interview</a></li>
+      <li><a href="https://youtu.be/71tJ8IadiK0" target="_blank">Africa Center for Water Management</a></li>
+      <li><a href="https://youtu.be/grJnMEWRuLI" target="_blank">EASTRIP Project Launch</a></li>
+      <li><a href="https://youtu.be/7L4Zg9_3ILk" target="_blank">CDT Africa Innovation Café</a></li>
+      <li><a href="https://youtu.be/51MyZtmV6i0" target="_blank">Africa Railway Center of Excellence</a></li>
+      <li><a href="https://youtu.be/7PFSguMLpQs" target="_blank">Climate Smart Agriculture and Biodiversity</a></li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:desmen095104@gmail.com">desmen095104@gmail.com</a></p>
+    <p>Facebook: <a href="https://web.facebook.com/profile.php?id=100064839738218" target="_blank">Desiybelih Multimedia</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/desiybelih-menberu" target="_blank">Desiybelih Menberu</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Desiybelih Multimedia Production. All rights reserved.</p>
+  </footer>
+</body>
+</html>
