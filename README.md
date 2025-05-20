@@ -2,12 +2,12 @@
   <img src="https://raw.githubusercontent.com/desiybelih/desiybelih-multimedia/main/assets/logo.png" alt="Desiybelih Multimedia Logo" width="250"/>
 </p>
 
-<h1 align="center">Desiybelih Multimedia Production</h1>
-<p align="center"><strong>CREATIVITY. ETHICS. SPEED.</strong></p>
+# 🎬 Desiybelih Multimedia Production  
+**CREATIVITY. ETHICS. SPEED.**
 
 ---
 
-Welcome to the official GitHub repository of **Desiybelih Multimedia Production** — where **powerful storytelling meets professional production**. We combine **creative visuals, ethical values, and fast delivery** to support organizations, NGOs, and individuals in communicating meaningful stories.
+Welcome to the official GitHub repository of **Desiybelih Multimedia Production** — where powerful storytelling meets professional production. We combine **creative visuals**, **ethical values**, and **fast delivery** to help organizations, NGOs, and individuals communicate meaningful stories.
 
 ---
 
@@ -18,7 +18,7 @@ Welcome to the official GitHub repository of **Desiybelih Multimedia Production*
 - 📺 TV Episodes & Radio Dramas  
 - 🧠 Media Training & Consultancy  
 - 💼 Commercials, Awareness Campaigns & Corporate Videos  
-- 🖥️ Graphic Design & Event Coverage
+- 🖥️ Graphic Design & Event Coverage  
 
 ---
 
@@ -30,28 +30,29 @@ Welcome to the official GitHub repository of **Desiybelih Multimedia Production*
 - ACE Climate-SABC  
 - Project Mercy  
 - People In Need Ethiopia  
-- More local & international organizations
+- ...and several other local and international organizations
 
 ---
 
 ## 📂 Project Portfolio
 
-🎞️ Explore our video works:  
-🔗 [YouTube Channel – Desiybelih Multimedia](https://www.youtube.com/@DesiybelihMultimedia)
+🎞️ Explore our works on YouTube:  
+👉 [Desiybelih Multimedia Channel](https://www.youtube.com/@DesiybelihMultimedia)
 
-🌐 View our official website:  
-🔗 [desiybelih.github.io/desiybelih-multimedia](https://desiybelih.github.io/desiybelih-multimedia/)
+🌐 Visit our official website:  
+👉 [desiybelih.github.io/desiybelih-multimedia](https://desiybelih.github.io/desiybelih-multimedia/)
 
 ---
 
-## 📬 Contact
+## 📬 Contact Us
 
-📧 Email: desmen095104@gmail.com  
-🌐 Website: [desiybelih.github.io/desiybelih-multimedia](https://desiybelih.github.io/desiybelih-multimedia/)  
-📱 Social Media: Facebook | TikTok | YouTube | LinkedIn | Instagram
+📧 **Email**: desmen095104@gmail.com  
+🌍 **Website**: [desiybelih.github.io/desiybelih-multimedia](https://desiybelih.github.io/desiybelih-multimedia/)  
+📱 **Social Media**:  
+[Facebook](#) | [TikTok](#) | [YouTube](https://www.youtube.com/@DesiybelihMultimedia) | [LinkedIn](#) | [Instagram](#)
 
 ---
 
 <p align="center">
-  <em>© 2025 Desiybelih Multimedia Production</em>
+  <em>© 2025 Desiybelih Multimedia Production. All rights reserved.</em>
 </p>
