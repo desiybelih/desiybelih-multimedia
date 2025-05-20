@@ -1,72 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Desiybelih Multimedia Production - Creativity. Ethics. Speed." />
-  <title>Desiybelih Multimedia Production</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <img src="assets/logo.png" alt="Desiybelih Logo" class="logo" />
-    <h1>Desiybelih Multimedia Production</h1>
-    <p class="slogan">CREATIVITY. ETHICS. SPEED.</p>
-  </header>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/desiybelih/desiybelih-multimedia/main/assets/logo.png" alt="Desiybelih Multimedia Logo" width="250"/>
+</p>
 
-  <section class="about">
-    <h2>About Us</h2>
-    <p>We are a creative production company based in Ethiopia offering film production, photography, music videos, commercials, graphic design, documentaries, event organization, TV episodes, training and consultancy, and radio drama. Our strength lies in fast delivery, ethical storytelling, and AI-assisted creativity.</p>
-  </section>
+<h1 align="center">Desiybelih Multimedia Production</h1>
+<p align="center"><strong>CREATIVITY. ETHICS. SPEED.</strong></p>
 
-  <section class="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Film Production</li>
-      <li>Photography</li>
-      <li>Music Videos</li>
-      <li>Commercials</li>
-      <li>Graphic Design</li>
-      <li>Documentaries</li>
-      <li>Event Organization</li>
-      <li>TV Episodes</li>
-      <li>Training & Consultancy</li>
-      <li>Radio Drama</li>
-    </ul>
-  </section>
+---
 
-  <section class="clients">
-    <h2>Our Partners</h2>
-    <div class="logos">
-      <img src="assets/WorldBank_Logo.png" alt="World Bank" />
-      <img src="assets/WFP.png" alt="WFP" />
-      <img src="assets/GIZ.png" alt="GIZ" />
-      <img src="assets/SelfHelpAfrica.png" alt="Self Help Africa" />
-      <img src="assets/Mastercard.png" alt="Mastercard Foundation" />
-    </div>
-  </section>
+Welcome to the official GitHub repository of **Desiybelih Multimedia Production** — where **powerful storytelling meets professional production**. We combine **creative visuals, ethical values, and fast delivery** to support organizations, NGOs, and individuals in communicating meaningful stories.
 
-  <section class="portfolio">
-    <h2>Featured Projects</h2>
-    <ul>
-      <li><a href="https://youtu.be/xMwf9XYIOxE" target="_blank">Ayda Ashenafi – Fana Interview</a></li>
-      <li><a href="https://youtu.be/71tJ8IadiK0" target="_blank">Africa Center for Water Management</a></li>
-      <li><a href="https://youtu.be/grJnMEWRuLI" target="_blank">EASTRIP Project Launch</a></li>
-      <li><a href="https://youtu.be/7L4Zg9_3ILk" target="_blank">CDT Africa Innovation Café</a></li>
-      <li><a href="https://youtu.be/51MyZtmV6i0" target="_blank">Africa Railway Center of Excellence</a></li>
-      <li><a href="https://youtu.be/7PFSguMLpQs" target="_blank">Climate Smart Agriculture and Biodiversity</a></li>
-    </ul>
-  </section>
+---
 
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:desmen095104@gmail.com">desmen095104@gmail.com</a></p>
-    <p>Facebook: <a href="https://web.facebook.com/profile.php?id=100064839738218" target="_blank">Desiybelih Multimedia</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/desiybelih-menberu" target="_blank">Desiybelih Menberu</a></p>
-  </section>
+## 🌟 What We Do
 
-  <footer>
-    <p>&copy; 2025 Desiybelih Multimedia Production. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+- 🎬 Short Films & Documentaries  
+- 📸 Photography & Music Videos  
+- 📺 TV Episodes & Radio Dramas  
+- 🧠 Media Training & Consultancy  
+- 💼 Commercials, Awareness Campaigns & Corporate Videos  
+- 🖥️ Graphic Design & Event Coverage
+
+---
+
+## 🤝 Our Clients & Partners
+
+- IUCEA (EASTRIP, ACE)  
+- CDT Africa  
+- ARCE  
+- ACE Climate-SABC  
+- Project Mercy  
+- People In Need Ethiopia  
+- More local & international organizations
+
+---
+
+## 📂 Project Portfolio
+
+🎞️ Explore our video works:  
+🔗 [YouTube Channel – Desiybelih Multimedia](https://www.youtube.com/@DesiybelihMultimedia)
+
+🌐 View our official website:  
+🔗 [desiybelih.github.io/desiybelih-multimedia](https://desiybelih.github.io/desiybelih-multimedia/)
+
+---
+
+## 📬 Contact
+
+📧 Email: desmen095104@gmail.com  
+🌐 Website: [desiybelih.github.io/desiybelih-multimedia](https://desiybelih.github.io/desiybelih-multimedia/)  
+📱 Social Media: Facebook | TikTok | YouTube | LinkedIn | Instagram
+
+---
+
+<p align="center">
+  <em>© 2025 Desiybelih Multimedia Production</em>
+</p>
