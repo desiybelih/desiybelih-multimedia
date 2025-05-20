@@ -1,27 +1,133 @@
 
-<section id="our-productions" style="padding: 2rem;">
-  <h2 style="text-align:center;">Our Productions</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
-    <div style="flex: 1 1 300px; max-width: 500px;">
-      <iframe width="100%" height="280" src="https://www.youtube.com/embed/xMwf9XYIOxE" title="ትንታጓ የፊልም ባለሙያ አይዳ አሸናፊ" frameborder="0" allowfullscreen></iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desiybelih Multimedia Productions</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: white;
+    }
+
+    header {
+      background: #000000;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #f0a500;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    h2.animated-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .video-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .video-card {
+      position: relative;
+      flex: 1 1 300px;
+      max-width: 450px;
+      overflow: hidden;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: linear-gradient(to bottom right, #1a1a1a, #2b2b2b);
+      border: 2px solid rgba(255, 255, 255, 0.08);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .video-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 25px 40px rgba(255, 255, 255, 0.15);
+    }
+
+    .video-title {
+      position: absolute;
+      bottom: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+      color: white;
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      font-weight: 500;
+      text-shadow: 1px 1px 3px black;
+    }
+
+    .video-card iframe {
+      width: 100%;
+      height: 280px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Desiybelih Multimedia Productions</h1>
+  </header>
+
+  <section id="our-productions" style="background: linear-gradient(135deg, #0f0f0f, #1c1c1c);">
+    <h2 class="animated-title">🎬 Our Productions</h2>
+    <div class="video-grid">
+      <div class="video-card">
+        <a href="https://www.youtube.com/watch?v=xMwf9XYIOxE" target="_blank"><iframe src="https://www.youtube.com/embed/xMwf9XYIOxE" allowfullscreen></iframe></a>
+        <div class="video-title">ትንታጓ የፊልም ባለሙያ አይዳ አሸናፊ</div>
+      </div>
+      <div class="video-card">
+        <a href="https://www.youtube.com/watch?v=T2vmNXGL95k" target="_blank"><iframe src="https://www.youtube.com/embed/T2vmNXGL95k" allowfullscreen></iframe></a>
+        <div class="video-title">ከፕሮጀክት ሜርሲ ወ/ሮ ማርታ ገ/ፃዲቅ ቆይታ</div>
+      </div>
+      <div class="video-card">
+        <a href="https://www.youtube.com/watch?v=71tJ8IadiK0" target="_blank"><iframe src="https://www.youtube.com/embed/71tJ8IadiK0" allowfullscreen></iframe></a>
+        <div class="video-title">Africa Center for Water Management</div>
+      </div>
+      <div class="video-card">
+        <a href="https://www.youtube.com/watch?v=7PFSguMLpQs" target="_blank"><iframe src="https://www.youtube.com/embed/7PFSguMLpQs" allowfullscreen></iframe></a>
+        <div class="video-title">CDT Africa – ACE</div>
+      </div>
+      <div class="video-card">
+        <a href="https://www.youtube.com/watch?v=7L4Zg9_3ILk" target="_blank"><iframe src="https://www.youtube.com/embed/7L4Zg9_3ILk" allowfullscreen></iframe></a>
+        <div class="video-title">CDT Africa Innovation Café</div>
+      </div>
+      <div class="video-card">
+        <a href="https://www.youtube.com/watch?v=a_Hq7_KmEtE" target="_blank"><iframe src="https://www.youtube.com/embed/a_Hq7_KmEtE" allowfullscreen></iframe></a>
+        <div class="video-title">CDT AFRICA</div>
+      </div>
+      <div class="video-card">
+        <a href="https://www.youtube.com/watch?v=grJnMEWRuLI" target="_blank"><iframe src="https://www.youtube.com/embed/grJnMEWRuLI" allowfullscreen></iframe></a>
+        <div class="video-title">EASTRIP Project Launch</div>
+      </div>
     </div>
-    <div style="flex: 1 1 300px; max-width: 500px;">
-      <iframe width="100%" height="280" src="https://www.youtube.com/embed/T2vmNXGL95k" title="ከፕሮጀክት ሜርሲ ወ/ሮ ማርታ ገ/ፃዲቅ ቆይታ" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div style="flex: 1 1 300px; max-width: 500px;">
-      <iframe width="100%" height="280" src="https://www.youtube.com/embed/71tJ8IadiK0" title="Africa Center for Water Management" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div style="flex: 1 1 300px; max-width: 500px;">
-      <iframe width="100%" height="280" src="https://www.youtube.com/embed/7PFSguMLpQs" title="CDT Africa – ACE" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div style="flex: 1 1 300px; max-width: 500px;">
-      <iframe width="100%" height="280" src="https://www.youtube.com/embed/7L4Zg9_3ILk" title="CDT Africa Innovation Café" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div style="flex: 1 1 300px; max-width: 500px;">
-      <iframe width="100%" height="280" src="https://www.youtube.com/embed/a_Hq7_KmEtE" title="CDT AFRICA" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div style="flex: 1 1 300px; max-width: 500px;">
-      <iframe width="100%" height="280" src="https://www.youtube.com/embed/grJnMEWRuLI" title="EASTRIP Project Launch" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
-</section>
+  </section>
+</body>
+</html>
