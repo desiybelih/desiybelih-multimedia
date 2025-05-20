@@ -131,3 +131,122 @@
   </section>
 </body>
 </html>
+<section id="our-productions" style="padding: 2rem; background: linear-gradient(135deg, #0f0f0f, #1c1c1c); color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <h2 class="animated-title scroll-fade" style="text-align:center; font-size: 2.5rem; margin-bottom: 2rem;">🎬 Our Productions</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
+
+    <style>
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .video-card {
+        position: relative;
+        flex: 1 1 300px;
+        max-width: 450px;
+        overflow: hidden;
+        border-radius: 16px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background: linear-gradient(to bottom right, #1a1a1a, #2b2b2b);
+        border: 2px solid rgba(255, 255, 255, 0.08);
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      .video-title {
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+        color: white;
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: 500;
+        text-shadow: 1px 1px 3px black;
+      }
+
+      .video-card iframe {
+        width: 100%;
+        height: 280px;
+        border: none;
+      }
+
+      .scroll-fade {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+      }
+
+      .scroll-fade.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.video-card, .scroll-fade').forEach(el => {
+          observer.observe(el);
+        });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" integrity="sha512-wkI7c7AeX78REgBpCzms0z//R6ebXlAhdbRzLkIO3u4XxryEnA9NkSl6zhItzDUSzYGy9X3Iv7pEVoIMKyWxKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js" integrity="sha512-Nt1W1/5QFePb8VIsFYsmBS3SbNRHVk1i3Ym57EwULnh+czzGFDzGMblaz6dS4aJLK3+WjSOiBVu7MHHiX+6PSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      const lightbox = GLightbox({ selector: '.glightbox' });
+    </script>
+
+    <div class="video-card scroll-fade">
+      <a href="https://www.youtube.com/watch?v=xMwf9XYIOxE" class="glightbox" data-type="video"><iframe src="https://www.youtube.com/embed/xMwf9XYIOxE" allowfullscreen></iframe></a>
+      <div class="video-title">ትንታጓ የፊልም ባለሙያ አይዳ አሸናፊ</div>
+    </div>
+
+    <div class="video-card scroll-fade">
+      <a href="https://www.youtube.com/watch?v=T2vmNXGL95k" class="glightbox" data-type="video"><iframe src="https://www.youtube.com/embed/T2vmNXGL95k" allowfullscreen></iframe></a>
+      <div class="video-title">ከፕሮጀክት ሜርሲ ወ/ሮ ማርታ ገ/ፃዲቅ ቆይታ</div>
+    </div>
+
+    <div class="video-card scroll-fade">
+      <a href="https://www.youtube.com/watch?v=71tJ8IadiK0" class="glightbox" data-type="video"><iframe src="https://www.youtube.com/embed/71tJ8IadiK0" allowfullscreen></iframe></a>
+      <div class="video-title">Africa Center for Water Management</div>
+    </div>
+
+    <div class="video-card scroll-fade">
+      <a href="https://www.youtube.com/watch?v=7PFSguMLpQs" class="glightbox" data-type="video"><iframe src="https://www.youtube.com/embed/7PFSguMLpQs" allowfullscreen></iframe></a>
+      <div class="video-title">CDT Africa – ACE</div>
+    </div>
+
+    <div class="video-card scroll-fade">
+      <a href="https://www.youtube.com/watch?v=7L4Zg9_3ILk" class="glightbox" data-type="video"><iframe src="https://www.youtube.com/embed/7L4Zg9_3ILk" allowfullscreen></iframe></a>
+      <div class="video-title">CDT Africa Innovation Café</div>
+    </div>
+
+    <div class="video-card scroll-fade">
+      <a href="https://www.youtube.com/watch?v=a_Hq7_KmEtE" class="glightbox" data-type="video"><iframe src="https://www.youtube.com/embed/a_Hq7_KmEtE" allowfullscreen></iframe></a>
+      <div class="video-title">CDT AFRICA</div>
+    </div>
+
+    <div class="video-card scroll-fade">
+      <a href="https://www.youtube.com/watch?v=grJnMEWRuLI" class="glightbox" data-type="video"><iframe src="https://www.youtube.com/embed/grJnMEWRuLI" allowfullscreen></iframe></a>
+      <div class="video-title">EASTRIP Project Launch</div>
+    </div>
+
+  </div>
+</section>
