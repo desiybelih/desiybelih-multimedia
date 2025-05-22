@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desiybelih Multimedia</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: #001f3f;
+      color: white;
+    }
+    .slogan {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .logo {
+      height: 50px;
+    }
+    .slideshow-container {
+      position: relative;
+      max-width: 100%;
+      margin: auto;
+    }
+    .slides {
+      display: none;
+      width: 100%;
+      height: auto;
+    }
+    .arrow {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 1rem;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    .right {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .video-section {
+      padding: 2rem;
+      background-color: #f8f8f8;
+      text-align: center;
+    }
+    .video-card {
+      margin: 1rem;
+      display: inline-block;
+      width: 300px;
+    }
+    iframe {
+      width: 100%;
+      height: 180px;
+    }
+    .testimonial {
+      background: #fff;
+      padding: 2rem;
+      margin: 2rem;
+      border-left: 5px solid orange;
+    }
+    footer {
+      background: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="slogan">Creativity. Ethics. Speed.</div>
+    <img src="logo.png" alt="Desiybelih Logo" class="logo" />
+  </header>
+
+  <div class="slideshow-container">
+    <img class="slides" src="slideshow/image1.jpg" />
+    <img class="slides" src="slideshow/image2.jpg" />
+    <img class="slides" src="slideshow/image3.jpg" />
+    <img class="slides" src="slideshow/image4.jpg" />
+    <img class="slides" src="slideshow/image5.jpg" />
+    <a class="arrow left" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="arrow right" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <div class="video-section">
+    <h2>Our Productions</h2>
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+      <p>Ayd Ashenafi</p>
+    </div>
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+      <p>Water Management</p>
+    </div>
+  </div>
+
+  <div class="testimonial">
+    <p>“Desiybelih Multimedia delivered high-quality, engaging videos that exceeded our expectations.”</p>
+    <strong>- Self Help Africa</strong>
+  </div>
+
+  <footer>
+    <p>Contact: +251911095104 / +251924828846</p>
+    <p>&copy; 2025 Desiybelih Multimedia. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function plusSlides(n) {
+      slideIndex += n;
+      showSlides();
+    }
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1;}
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 4000);
+    }
+  </script>
+</body>
+</html>
