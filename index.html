@@ -1,405 +1,85 @@
 
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Desiybelih Multimedia Productions</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desiybelih Multimedia</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: white;
+      padding: 0;
     }
-
-    header {
-      background: #000000;
-      padding: 1rem 2rem;
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    .section-title {
+      font-size: 2em;
+      color: #004080;
       text-align: center;
+      margin-bottom: 20px;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: #f0a500;
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
     }
-
-    section {
-      padding: 2rem;
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
-
-    h2.animated-title {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-      animation: fadeInUp 1s ease-out;
-    }
-
-    .video-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1.5rem;
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .video-card {
-      position: relative;
-      flex: 1 1 300px;
-      max-width: 450px;
-      overflow: hidden;
-      border-radius: 16px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      background: linear-gradient(to bottom right, #1a1a1a, #2b2b2b);
-      border: 2px solid rgba(255, 255, 255, 0.08);
-      animation: fadeInUp 1s ease forwards;
-    }
-
-    .video-card:hover {
+    .gallery-grid a:hover img {
       transform: scale(1.05);
-      box-shadow: 0 25px 40px rgba(255, 255, 255, 0.15);
-    }
-
-    .video-title {
-      position: absolute;
-      bottom: 0;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
-      color: white;
-      width: 100%;
-      padding: 1rem;
-      font-size: 1rem;
-      font-weight: 500;
-      text-shadow: 1px 1px 3px black;
-    }
-
-    .video-card iframe {
-      width: 100%;
-      height: 280px;
-      border: none;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Desiybelih Multimedia Productions</h1>
-  </header>
 
-  <section id="our-productions" style="background: linear-gradient(135deg, #0f0f0f, #1c1c1c);">
-    <h2 class="animated-title">🎬 Our Productions</h2>
-    <div class="video-grid">
-      <div class="video-card">
-        <a href="https://www.youtube.com/watch?v=xMwf9XYIOxE" target="_blank"><iframe src="https://www.youtube.com/embed/xMwf9XYIOxE" allowfullscreen></iframe></a>
-        <div class="video-title">ትንታጓ የፊልም ባለሙያ አይዳ አሸናፊ</div>
-      </div>
-      <div class="video-card">
-        <a href="https://www.youtube.com/watch?v=T2vmNXGL95k" target="_blank"><iframe src="https://www.youtube.com/embed/T2vmNXGL95k" allowfullscreen></iframe></a>
-        <div class="video-title">ከፕሮጀክት ሜርሲ ወ/ሮ ማርታ ገ/ፃዲቅ ቆይታ</div>
-      </div>
-      <div class="video-card">
-        <a href="https://www.youtube.com/watch?v=71tJ8IadiK0" target="_blank"><iframe src="https://www.youtube.com/embed/71tJ8IadiK0" allowfullscreen></iframe></a>
-        <div class="video-title">Africa Center for Water Management</div>
-      </div>
-      <div class="video-card">
-        <a href="https://www.youtube.com/watch?v=7PFSguMLpQs" target="_blank"><iframe src="https://www.youtube.com/embed/7PFSguMLpQs" allowfullscreen></iframe></a>
-        <div class="video-title">CDT Africa – ACE</div>
-      </div>
-      <div class="video-card">
-        <a href="https://www.youtube.com/watch?v=7L4Zg9_3ILk" target="_blank"><iframe src="https://www.youtube.com/embed/7L4Zg9_3ILk" allowfullscreen></iframe></a>
-        <div class="video-title">CDT Africa Innovation Café</div>
-      </div>
-      <div class="video-card">
-        <a href="https://www.youtube.com/watch?v=a_Hq7_KmEtE" target="_blank"><iframe src="https://www.youtube.com/embed/a_Hq7_KmEtE" allowfullscreen></iframe></a>
-        <div class="video-title">CDT AFRICA</div>
-      </div>
-      <div class="video-card">
-        <a href="https://www.youtube.com/watch?v=grJnMEWRuLI" target="_blank"><iframe src="https://www.youtube.com/embed/grJnMEWRuLI" allowfullscreen></iframe></a>
-        <div class="video-title">EASTRIP Project Launch</div>
+  <!-- Photo Gallery Section -->
+  <section id="photo-gallery" class="section">
+    <div class="container">
+      <h2 class="section-title">Photo Gallery</h2>
+      <div class="gallery-grid">
+        <a href="images/43828214_2005031649558062_1246120873295872000_n.jpg" data-lightbox="gallery">
+          <img src="images/43828214_2005031649558062_1246120873295872000_n.jpg" alt="Photo">
+        </a>
+        <a href="images/448304044_7933423616718806_6075877357702180414_n.jpg" data-lightbox="gallery">
+          <img src="images/448304044_7933423616718806_6075877357702180414_n.jpg" alt="Photo">
+        </a>
+        <a href="images/465039736_8828163640578128_1545606115888916416_n.jpg" data-lightbox="gallery">
+          <img src="images/465039736_8828163640578128_1545606115888916416_n.jpg" alt="Photo">
+        </a>
+        <a href="images/465456329_8853167771411048_4946229566254742786_n.jpg" data-lightbox="gallery">
+          <img src="images/465456329_8853167771411048_4946229566254742786_n.jpg" alt="Photo">
+        </a>
+        <a href="images/48378293_2098535383541021_4239853227685707776_n.jpg" data-lightbox="gallery">
+          <img src="images/48378293_2098535383541021_4239853227685707776_n.jpg" alt="Photo">
+        </a>
+        <a href="images/53030612_2203882149673010_3661528953497059328_n.jpg" data-lightbox="gallery">
+          <img src="images/53030612_2203882149673010_3661528953497059328_n.jpg" alt="Photo">
+        </a>
+        <a href="images/61711096_2348114805249743_9019528924731801600_n.jpg" data-lightbox="gallery">
+          <img src="images/61711096_2348114805249743_9019528924731801600_n.jpg" alt="Photo">
+        </a>
+        <a href="images/70287812_2537139299680625_1492389410375729152_n.jpg" data-lightbox="gallery">
+          <img src="images/70287812_2537139299680625_1492389410375729152_n.jpg" alt="Photo">
+        </a>
+        <a href="images/87812084_2885051771556041_8597188684388761600_n.jpg" data-lightbox="gallery">
+          <img src="images/87812084_2885051771556041_8597188684388761600_n.jpg" alt="Photo">
+        </a>
       </div>
     </div>
   </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>
-<section id="our-productions" style="padding: 2rem; background: linear-gradient(135deg, #0f0f0f, #1c1c1c); color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-  <h2 class="animated-title scroll-fade" style="text-align:center; font-size: 2.5rem; margin-bottom: 2rem;">🎬 Our Productions</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
-
-    <style>
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      .video-card {
-        position: relative;
-        flex: 1 1 300px;
-        max-width: 450px;
-        overflow: hidden;
-        border-radius: 16px;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.6);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        background: linear-gradient(to bottom right, #1a1a1a, #2b2b2b);
-        border: 2px solid rgba(255, 255, 255, 0.08);
-        opacity: 0;
-        transform: translateY(30px);
-      }
-
-      .video-title {
-        position: absolute;
-        bottom: 0;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
-        color: white;
-        width: 100%;
-        padding: 1rem;
-        font-size: 1rem;
-        font-weight: 500;
-        text-shadow: 1px 1px 3px black;
-      }
-
-      .video-card iframe {
-        width: 100%;
-        height: 280px;
-        border: none;
-      }
-
-      .scroll-fade {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.8s ease, transform 0.8s ease;
-      }
-
-      .scroll-fade.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    </style>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-            }
-          });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.video-card, .scroll-fade').forEach(el => {
-          observer.observe(el);
-        });
-      });
-    </script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" integrity="sha512-wkI7c7AeX78REgBpCzms0z//R6ebXlAhdbRzLkIO3u4XxryEnA9NkSl6zhItzDUSzYGy9X3Iv7pEVoIMKyWxKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js" integrity="sha512-Nt1W1/5QFePb8VIsFYsmBS3SbNRHVk1i3Ym57EwULnh+czzGFDzGMblaz6dS4aJLK3+WjSOiBVu7MHHiX+6PSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-      const lightbox = GLightbox({ selector: '.glightbox' });
-    </script>
-
-    <div class="video-card scroll-fade">
-      <a href="https://www.youtube.com/watch?v=xMwf9XYIOxE" class="glightbox" data-type="video"><iframe src="https://www.youtube.com/embed/xMwf9XYIOxE" allowfullscreen></iframe></a>
-      <div class="video-title">ትንታጓ የፊልም ባለሙያ አይዳ አሸናፊ</div>
-    </div>
-
-    <div class="video-card scroll-fade">
-      <a href="https://www.youtube.com/watch?v=T2vmNXGL95k" class="glightbox" data-type="video"><iframe src="https://www.youtube.com/embed/T2vmNXGL95k" allowfullscreen></iframe></a>
-      <div class="video-title">ከፕሮጀክት ሜርሲ ወ/ሮ ማርታ ገ/ፃዲቅ ቆይታ</div>
-    </div>
-
-    <div class="video-card scroll-fade">
-      <a href="https://www.youtube.com/watch?v=71tJ8IadiK0" class="glightbox" data-type="video"><iframe src="https://www.youtube.com/embed/71tJ8IadiK0" allowfullscreen></iframe></a>
-      <div class="video-title">Africa Center for Water Management</div>
-    </div>
-
-    <div class="video-card scroll-fade">
-      <a href="https://www.youtube.com/watch?v=7PFSguMLpQs" class="glightbox" data-type="video"><iframe src="https://www.youtube.com/embed/7PFSguMLpQs" allowfullscreen></iframe></a>
-      <div class="video-title">CDT Africa – ACE</div>
-    </div>
-
-    <div class="video-card scroll-fade">
-      <a href="https://www.youtube.com/watch?v=7L4Zg9_3ILk" class="glightbox" data-type="video"><iframe src="https://www.youtube.com/embed/7L4Zg9_3ILk" allowfullscreen></iframe></a>
-      <div class="video-title">CDT Africa Innovation Café</div>
-    </div>
-
-    <div class="video-card scroll-fade">
-      <a href="https://www.youtube.com/watch?v=a_Hq7_KmEtE" class="glightbox" data-type="video"><iframe src="https://www.youtube.com/embed/a_Hq7_KmEtE" allowfullscreen></iframe></a>
-      <div class="video-title">CDT AFRICA</div>
-    </div>
-
-    <div class="video-card scroll-fade">
-      <a href="https://www.youtube.com/watch?v=grJnMEWRuLI" class="glightbox" data-type="video"><iframe src="https://www.youtube.com/embed/grJnMEWRuLI" allowfullscreen></iframe></a>
-      <div class="video-title">EASTRIP Project Launch</div>
-    </div>
-
-  </div>
-</section><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Desiybelih Multimedia</title>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    .video-bg video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
-    }
-  </style>
-</head>
-<body class="bg-gray-900 text-white">
-  <!-- Hero Section with Video Background -->
-  <section class="relative h-screen flex items-center justify-center text-center">
-    <div class="video-bg">
-      <video autoplay muted loop>
-        <source src="https://cdn.coverr.co/videos/coverr-aerial-shot-of-city-at-dawn-9885/1080p.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="z-10 max-w-2xl mx-auto px-4" data-aos="fade-up" data-aos-duration="1500">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Desiybelih Multimedia Production</h1>
-      <p class="text-lg md:text-xl mb-6">Creativity. Ethics. Speed.</p>
-      <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">Contact Us</a>
-    </div>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section class="py-16 bg-white text-gray-900" id="testimonials">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-
-        <!-- Testimonial 1: ACEWM -->
-        <div class="bg-gray-100 p-6 rounded-xl shadow-lg" data-aos="fade-up">
-          <p class="text-lg italic mb-4">"Desiybelih Multimedia Production has fully met its commitments in terms of quality, time, and professionalism. The results were phenomenal, and we are highly satisfied with the engagement. ACEWM recommends Desiybelih for any similar production assignments."</p>
-          <div class="mt-4">
-            <p class="font-semibold">Africa Center of Excellence for Water Management</p>
-            <p class="text-sm text-gray-600">Addis Ababa University</p>
-          </div>
-        </div>
-
-        <!-- Testimonial 2: Placeholder -->
-        <div class="bg-gray-100 p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
-          <p class="text-lg italic mb-4">"Working with Desiybelih Multimedia was a seamless experience. Their creativity and professionalism exceeded our expectations. Highly recommended for any video production needs."</p>
-          <div class="mt-4">
-            <p class="font-semibold">Sara Meles</p>
-            <p class="text-sm text-gray-600">Communications Lead, GreenWorld NGO</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <script>
-    AOS.init();
-  </script>
-</body>
-</html><section>
-  <h2>About Us</h2>
-  <p>We are a creative media company offering professional services in film, music videos, photography, graphic design, and more. We are passionate about storytelling that drives impact and change.</p>
-</section>
-
-<section>
-  <h2>Our Services</h2>
-  <div class="services">
-    <div class="service-box">🎬 Film Production</div>
-    <div class="service-box">📸 Photography</div>
-    <div class="service-box">🎵 Music Videos</div>
-    <div class="service-box">📺 TV Episodes</div>
-    <div class="service-box">📊 Graphic Design</div>
-    <div class="service-box">📚 Training & Consultancy</div>
-    <div class="service-box">🎙️ Radio Drama</div>
-    <div class="service-box">🎤 Documentaries & Commercials</div>
-  </div>
-</section>
-
-<section>
-  <h2>Portfolio</h2>
-  <p>Explore our work across various sectors and collaborations.</p>
-  <div class="portfolio">
-    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
-  </div>
-  <div class="partners">
-    <img src="partner1.png" alt="Partner 1" />
-    <img src="partner2.png" alt="Partner 2" />
-    <img src="partner3.png" alt="Partner 3" />
-  </div>
-</section>
-
-<section>
-  <h2>Why Choose Us?</h2>
-  <div class="why-us">
-    <div class="why-box">✅ Ethical & professional team</div>
-    <div class="why-box">⚡ Fast and efficient delivery</div>
-    <div class="why-box">🎯 Creative, story-driven content</div>
-    <div class="why-box">💼 Competitive pricing</div>
-  </div>
-</section>
-
-<section>
-  <h2>Contact Us</h2>
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Your Email" required />
-    <textarea placeholder="Your Message" rows="4"></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-  <p>📧 Email: desmen095104@gmail.com | 📱 Facebook: <a href="https://facebook.com/desiybelih">/desiybelih</a></p>
-</section>
-DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Desiybelih Multimedia</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-100">
-
-  <!-- Static Banner Section -->
-  <div class="relative w-full h-[500px] overflow-hidden">
-    <!-- Slogan -->
-    <div class="absolute top-4 left-4 z-10 text-white text-xl font-semibold bg-blue-600 bg-opacity-75 px-4 py-2 rounded">
-      Creativity. Ethics. Speed.
-    </div>
-
-    <!-- Logo -->
-    <div class="absolute top-4 right-4 z-10">
-      <img src="/images/logo.png" alt="Logo" class="w-16 h-16 object-contain">
-    </div>
-
-    <!-- Static Banner Image -->
-    <img src="/images/shortfilm.jpg" class="w-full h-full object-cover" alt="Short Film">
-
-    <!-- Caption -->
-    <div class="absolute bottom-10 left-10 text-white text-3xl font-bold drop-shadow-lg">
-      Short Film Excellence
-    </div>
-  </div>
-
-</body>
-</html>
-
