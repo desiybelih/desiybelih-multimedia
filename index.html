@@ -2,174 +2,63 @@
 !DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desiybelih Multimedia</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 20px;
-    }
-    .section-title {
-      font-size: 2em;
-      color: #004080;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-      margin-top: 30px;
-    }
-    .gallery-grid img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-    .gallery-grid a:hover img {
-      transform: scale(1.05);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Photo Gallery Section -->
-  <section id="photo-gallery" class="section">
-    <div class="container">
-      <h2 class="section-title">Photo Gallery</h2>
-      <div class="gallery-grid">
-        <a href="images/43828214_2005031649558062_1246120873295872000_n.jpg" data-lightbox="gallery">
-          <img src="images/43828214_2005031649558062_1246120873295872000_n.jpg" alt="Photo">
-        </a>
-        <a href="images/448304044_7933423616718806_6075877357702180414_n.jpg" data-lightbox="gallery">
-          <img src="images/448304044_7933423616718806_6075877357702180414_n.jpg" alt="Photo">
-        </a>
-        <a href="images/465039736_8828163640578128_1545606115888916416_n.jpg" data-lightbox="gallery">
-          <img src="images/465039736_8828163640578128_1545606115888916416_n.jpg" alt="Photo">
-        </a>
-        <a href="images/465456329_8853167771411048_4946229566254742786_n.jpg" data-lightbox="gallery">
-          <img src="images/465456329_8853167771411048_4946229566254742786_n.jpg" alt="Photo">
-        </a>
-        <a href="images/48378293_2098535383541021_4239853227685707776_n.jpg" data-lightbox="gallery">
-          <img src="images/48378293_2098535383541021_4239853227685707776_n.jpg" alt="Photo">
-        </a>
-        <a href="images/53030612_2203882149673010_3661528953497059328_n.jpg" data-lightbox="gallery">
-          <img src="images/53030612_2203882149673010_3661528953497059328_n.jpg" alt="Photo">
-        </a>
-        <a href="images/61711096_2348114805249743_9019528924731801600_n.jpg" data-lightbox="gallery">
-          <img src="images/61711096_2348114805249743_9019528924731801600_n.jpg" alt="Photo">
-        </a>
-        <a href="images/70287812_2537139299680625_1492389410375729152_n.jpg" data-lightbox="gallery">
-          <img src="images/70287812_2537139299680625_1492389410375729152_n.jpg" alt="Photo">
-        </a>
-        <a href="images/87812084_2885051771556041_8597188684388761600_n.jpg" data-lightbox="gallery">
-          <img src="images/87812084_2885051771556041_8597188684388761600_n.jpg" alt="Photo">
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-</body>
-</html>!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Desiybelih Multimedia - Photo Gallery</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"/>
+  <title>Desiybelih Multimedia</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f9f9f9;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #333;
     }
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    .section-title {
-      font-size: 2.5em;
-      color: #004080;
+    header {
+      background: #004080;
+      color: white;
+      padding: 20px;
       text-align: center;
-      margin-bottom: 40px;
     }
-    .gallery-grid {
+    h1 {
+      margin: 0;
+    }
+    .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      padding: 20px;
     }
-    .gallery-grid img {
+    .gallery img {
       width: 100%;
       height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
+      border: 4px solid #ffa500;
+      border-radius: 8px;
     }
-    .gallery-grid a:hover img {
-      transform: scale(1.05);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    footer {
+      background: #004080;
+      color: white;
+      padding: 10px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
-  <!-- Photo Gallery Section -->
-  <section id="photo-gallery">
-    <div class="container">
-      <h2 class="section-title">Photo Gallery</h2>
-      <div class="gallery-grid">
-        <a href="images/43828214_2005031649558062_1246120873295872000_n.jpg" data-lightbox="gallery">
-          <img src="images/43828214_2005031649558062_1246120873295872000_n.jpg" alt="Photo 1">
-        </a>
-        <a href="images/48378293_2098535383541021_4239853227685707776_n.jpg" data-lightbox="gallery">
-          <img src="images/48378293_2098535383541021_4239853227685707776_n.jpg" alt="Photo 2">
-        </a>
-        <a href="images/61711096_2348114805249743_9019528924731801600_n.jpg" data-lightbox="gallery">
-          <img src="images/61711096_2348114805249743_9019528924731801600_n.jpg" alt="Photo 3">
-        </a>
-        <a href="images/70287812_2537139299680625_1492389410375729152_n.jpg" data-lightbox="gallery">
-          <img src="images/70287812_2537139299680625_1492389410375729152_n.jpg" alt="Photo 4">
-        </a>
-        <a href="images/461393195_2673800039448683_1577238996929341575_n.jpg" data-lightbox="gallery">
-          <img src="images/461393195_2673800039448683_1577238996929341575_n.jpg" alt="Photo 5">
-        </a>
-        <a href="images/87812084_2885051771556041_8597188684388761600_n.jpg" data-lightbox="gallery">
-          <img src="images/87812084_2885051771556041_8597188684388761600_n.jpg" alt="Photo 6">
-        </a>
-        <a href="images/465039736_8828163640578128_1545606115888916416_n.jpg" data-lightbox="gallery">
-          <img src="images/465039736_8828163640578128_1545606115888916416_n.jpg" alt="Photo 7">
-        </a>
-        <a href="images/465456329_8853167771411048_4946229566254742786_n.jpg" data-lightbox="gallery">
-          <img src="images/465456329_8853167771411048_4946229566254742786_n.jpg" alt="Photo 8">
-        </a>
-        <a href="images/53030612_2203882149673010_3661528953497059328_n.jpg" data-lightbox="gallery">
-          <img src="images/53030612_2203882149673010_3661528953497059328_n.jpg" alt="Photo 9">
-        </a>
-      </div>
-    </div>
+  <header>
+    <h1>Desiybelih Multimedia</h1>
+    <p>Creativity. Ethics. Speed.</p>
+  </header>
+
+  <section class="gallery">
+    <img src="https://via.placeholder.com/400x300?text=Photo+1" alt="Gallery Photo 1">
+    <img src="https://via.placeholder.com/400x300?text=Photo+2" alt="Gallery Photo 2">
+    <img src="https://via.placeholder.com/400x300?text=Photo+3" alt="Gallery Photo 3">
+    <img src="https://via.placeholder.com/400x300?text=Photo+4" alt="Gallery Photo 4">
   </section>
 
-  <!-- Lightbox2 JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-  <script>
-    lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true
-    });
-  </script>
+  <footer>
+    <p>&copy; 2025 Desiybelih Multimedia Production</p>
+    <p>Contact: +251911095104 / +251924828846</p>
+  </footer>
+
 </body>
 </html>
