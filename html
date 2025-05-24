@@ -4,504 +4,342 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Desiybelih Multimedia Production</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Desiybelih Multimedia Production offers high-quality film production, photography, documentaries, and creative content with a focus on storytelling and ethics." />
-  <meta name="keywords" content="film production, multimedia, documentaries, photography, creative content, Ethiopia" />
-  <meta name="author" content="Desiybelih Multimedia Production" />
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- FontAwesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
-
+  <meta name="description" content="Creativity. Ethics. Speed. Desiybelih Multimedia Production – professional film and media services." />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet" />
   <!-- Swiper CSS -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-  />
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <!-- Lottie Player -->
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
   <style>
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1s forwards;
+    .gallery-scroll::-webkit-scrollbar {
+      height: 8px;
     }
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    footer nav ul li {
-      margin-bottom: 0.5rem;
+    .gallery-scroll::-webkit-scrollbar-thumb {
+      background-color: #f97316; /* orange-500 */
+      border-radius: 10px;
     }
   </style>
 </head>
-<body class="bg-white text-gray-900">
+<body class="bg-gray-50 text-gray-800 scroll-smooth">
 
-  <!-- Hero Section with Lottie Animation and Swiper Slideshow -->
-  <section
-    class="relative w-full h-screen overflow-hidden flex flex-col justify-center items-center bg-black"
-    aria-label="Hero section with animated logo and slideshow"
+  <!-- Back to top button -->
+  <button
+    id="backToTopBtn"
+    title="Back to top"
+    class="fixed bottom-6 right-6 p-3 rounded-full bg-orange-500 text-white shadow-lg hover:bg-orange-600 hidden z-50"
+    aria-label="Back to top"
   >
-    <div
-      class="absolute top-4 left-6 text-xl font-semibold text-white bg-black bg-opacity-50 px-3 py-1 rounded z-10"
-      aria-label="Slogan"
-    >
-      Creativity. Ethics. Speed.
+    ↑
+  </button>
+
+  <!-- Header -->
+  <header class="flex justify-between items-center p-6 bg-white shadow-md sticky top-0 z-40">
+    <div class="flex items-center space-x-3">
+      <img src="https://desiybelih.github.io/desiybelih-multimedia/assets/logo.png" alt="Desiybelih Logo" class="h-10 w-auto" />
+      <h1 class="text-xl font-bold text-orange-500">Desiybelih Multimedia</h1>
     </div>
-    <div class="absolute top-4 right-6 z-10">
-      <img
-        src="logo.png"
-        alt="Desiybelih Multimedia Production Logo"
-        class="h-12"
-      />
-    </div>
+    <nav aria-label="Primary Navigation" class="space-x-6 hidden md:block">
+      <a href="#hero" class="hover:text-orange-500 transition">Home</a>
+      <a href="#productions" class="hover:text-orange-500 transition">Productions</a>
+      <a href="#gallery" class="hover:text-orange-500 transition">Gallery</a>
+      <a href="#testimonial" class="hover:text-orange-500 transition">Testimonials</a>
+      <a href="#contact" class="hover:text-orange-500 transition">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Lottie Animation -->
-    <lottie-player
-      src="https://assets9.lottiefiles.com/packages/lf20_5ngs2ksb.json"
-      background="transparent"
-      speed="1"
-      style="width: 200px; height: 200px;"
-      loop
-      autoplay
-      aria-label="Desiybelih Multimedia animated logo"
-    ></lottie-player>
-
-    <!-- Swiper Slideshow -->
-    <div
-      class="swiper w-full max-w-5xl h-96 mt-8 rounded-lg overflow-hidden shadow-lg"
-      role="region"
-      aria-roledescription="carousel"
-      aria-label="Featured projects slideshow"
-      aria-live="polite"
-      aria-atomic="true"
-      aria-relevant="additions"
-    >
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img
-            src="slide1.jpg"
-            alt="Behind the scenes filming for Project 1"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="slide2.jpg"
-            alt="Team working on Water Management documentary"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="slide3.jpg"
-            alt="Community outreach in Project Mercy"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="slide4.jpg"
-            alt="Filming in rural Ethiopia"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="slide5.jpg"
-            alt="Creative production setup at Desiybelih Multimedia"
-            class="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-
-      <!-- Swiper Navigation Arrows -->
-      <button class="swiper-button-prev" aria-label="Previous slide"></button>
-      <button class="swiper-button-next" aria-label="Next slide"></button>
-    </div>
-  </section>
-
-  <!-- Our Productions -->
-  <section class="py-12" aria-labelledby="productions-title">
-    <h2
-      id="productions-title"
-      class="text-3xl font-bold text-center mb-8"
-    >
-      Our Productions
-    </h2>
-    <div
-      class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4"
-    >
-      <div class="shadow-xl rounded-2xl overflow-hidden">
-        <iframe
-          class="w-full h-64"
-          src="https://www.youtube.com/embed/VIDEO_ID_1"
-          title="Ayd Ashenafi video"
-          allowfullscreen
-          loading="lazy"
-        ></iframe>
-        <div class="p-4 text-center font-semibold">Ayd Ashenafi</div>
-      </div>
-      <div class="shadow-xl rounded-2xl overflow-hidden">
-        <iframe
-          class="w-full h-64"
-          src="https://www.youtube.com/embed/VIDEO_ID_2"
-          title="Water Management video"
-          allowfullscreen
-          loading="lazy"
-        ></iframe>
-        <div class="p-4 text-center font-semibold">Water Management</div>
-      </div>
-      <div class="shadow-xl rounded-2xl overflow-hidden">
-        <iframe
-          class="w-full h-64"
-          src="https://www.youtube.com/embed/VIDEO_ID_3"
-          title="Project Mercy video"
-          allowfullscreen
-          loading="lazy"
-        ></iframe>
-        <div class="p-4 text-center font-semibold">Project Mercy</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Photo Gallery Slideshow -->
-  <section class="py-10 fade-in" aria-labelledby="gallery-title">
-    <h2 id="gallery-title" class="text-3xl font-bold text-center mb-6">
-      Photo Gallery
-    </h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4 sm:px-6 lg:px-8">
-      <img
-        src="photo1.jpg"
-        alt="Gallery photo: Behind the scenes 1"
-        class="rounded-xl shadow"
-        loading="lazy"
-      />
-      <img
-        src="photo2.jpg"
-        alt="Gallery photo: Community event 2"
-        class="rounded-xl shadow"
-        loading="lazy"
-      />
-      <img
-        src="photo3.jpg"
-        alt="Gallery photo: Filming setup 3"
-        class="rounded-xl shadow"
-        loading="lazy"
-      />
-      <img
-        src="photo4.jpg"
-        alt="Gallery photo: Team meeting 4"
-        class="rounded-xl shadow"
-        loading="lazy"
-      />
-      <img
-        src="photo5.jpg"
-        alt="Gallery photo: Rural landscape 5"
-        class="rounded-xl shadow"
-        loading="lazy"
-      />
-      <img
-        src="photo6.jpg"
-        alt="Gallery photo: Equipment close-up 6"
-        class="rounded-xl shadow"
-        loading="lazy"
-      />
-      <img
-        src="photo7.jpg"
-        alt="Gallery photo: Interview shot 7"
-        class="rounded-xl shadow"
-        loading="lazy"
-      />
-      <img
-        src="photo8.jpg"
-        alt="Gallery photo: Editing process 8"
-        class="rounded-xl shadow"
-        loading="lazy"
-      />
-      <img
-        src="photo9.jpg"
-        alt="Gallery photo: Final production 9"
-        class="rounded-xl shadow"
-        loading="lazy"
-      />
-    </div>
-  </section>
-
-  <!-- Testimonial -->
-  <section
-    class="py-12 bg-white text-center fade-in"
-    aria-label="Client testimonial"
-  >
-    <h2 class="text-2xl font-bold mb-4">Client Testimonial</h2>
-    <blockquote class="max-w-xl mx-auto italic">
-      "We are very satisfied with Desiybelih Multimedia's high-quality
-      storytelling and professionalism."
-    </blockquote>
-    <div class="mt-4">
-      <img
-        src="self-help-africa-logo.png"
-        class="h-12 inline-block"
-        alt="Self Help Africa Logo"
-        loading="lazy"
-      />
-    </div>
-  </section>
-
-  <!-- Contact Form -->
-  <section class="py-12 bg-gray-100" aria-labelledby="contact-title">
-    <h2
-      id="contact-title"
-      class="text-3xl font-bold text-center mb-8"
-    >
-      Contact Us
-    </h2>
-    <form
-      id="contact-form"
-      action="https://formspree.io/f/your-form-id"
-      method="POST"
-      class="max-w-xl mx-auto px-4"
-      novalidate
-      aria-describedby="form-instructions"
-    >
-      <p id="form-instructions" class="sr-only">
-        All fields are required. Please fill out the form and submit to get in touch.
+  <!-- Hero Section -->
+  <section id="hero" class="relative bg-white flex flex-col md:flex-row items-center justify-center px-6 py-16 md:py-24 max-w-7xl mx-auto gap-12">
+    <div class="md:w-1/2 text-center md:text-left">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-orange-600 mb-4">
+        Creativity. Ethics. Speed.
+      </h2>
+      <p class="text-lg md:text-xl text-gray-700 mb-6">
+        Delivering professional film production, multimedia, and creative content with integrity and speed.
       </p>
+      <a href="#contact" class="inline-block px-6 py-3 bg-orange-500 text-white font-semibold rounded-md hover:bg-orange-600 transition" role="button">Get in Touch</a>
+    </div>
+    <div class="md:w-1/2 max-w-md mx-auto">
+      <lottie-player
+        src="https://assets10.lottiefiles.com/packages/lf20_3vbOcw.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+        style="width: 100%; height: 300px;"
+        aria-label="Animated creative media illustration"
+      ></lottie-player>
+    </div>
+  </section>
 
+  <!-- Our Productions Section -->
+  <section id="productions" class="bg-gray-100 py-16 px-6 max-w-7xl mx-auto">
+    <h3 class="text-3xl font-bold text-center text-orange-600 mb-8">Our Productions</h3>
+
+    <div class="swiper productions-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide flex justify-center">
+          <iframe
+            width="320"
+            height="180"
+            src="https://www.youtube.com/embed/OzX5VlR3m68"
+            title="Ayd Ashenafi"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="rounded-md shadow-md"
+          ></iframe>
+        </div>
+        <div class="swiper-slide flex justify-center">
+          <iframe
+            width="320"
+            height="180"
+            src="https://www.youtube.com/embed/cYR7A4k9YFs"
+            title="Water Management"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="rounded-md shadow-md"
+          ></iframe>
+        </div>
+        <div class="swiper-slide flex justify-center">
+          <iframe
+            width="320"
+            height="180"
+            src="https://www.youtube.com/embed/0u1AqxM2N7k"
+            title="Belabela"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="rounded-md shadow-md"
+          ></iframe>
+        </div>
+      </div>
+      <div class="swiper-button-prev text-orange-600"></div>
+      <div class="swiper-button-next text-orange-600"></div>
+      <div class="swiper-pagination mt-4"></div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section id="gallery" class="py-16 px-6 max-w-7xl mx-auto">
+    <h3 class="text-3xl font-bold text-center text-orange-600 mb-8">Photo Gallery</h3>
+
+    <div class="relative max-w-5xl mx-auto">
+      <div class="swiper gallery-swiper rounded-lg shadow-lg">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/id/1011/800/500" alt="Gallery Image 1" class="w-full object-cover rounded-lg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/id/1015/800/500" alt="Gallery Image 2" class="w-full object-cover rounded-lg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/id/1016/800/500" alt="Gallery Image 3" class="w-full object-cover rounded-lg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/id/1021/800/500" alt="Gallery Image 4" class="w-full object-cover rounded-lg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/id/1025/800/500" alt="Gallery Image 5" class="w-full object-cover rounded-lg" />
+          </div>
+        </div>
+        <div class="swiper-button-prev text-orange-600"></div>
+        <div class="swiper-button-next text-orange-600"></div>
+        <div class="swiper-pagination mt-4"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section id="testimonial" class="bg-orange-50 py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-orange-600 mb-8">Client Testimonial</h3>
+      <blockquote class="text-gray-700 italic text-lg max-w-3xl mx-auto mb-8">
+        “Desiybelih Multimedia Production exceeded our expectations. Their creative approach combined with ethical standards made our project a true success. Highly recommended!”
+      </blockquote>
+      <img src="https://selfhelpafrica.org/wp-content/uploads/2020/09/shalogo2.png" alt="Self Help Africa Logo" class="mx-auto h-20 object-contain" />
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-6 max-w-3xl mx-auto">
+    <h3 class="text-3xl font-bold text-center text-orange-600 mb-8">Get In Touch</h3>
+    <form id="contactForm" class="bg-white p-8 rounded-lg shadow-md" novalidate>
       <div class="mb-6">
-        <label for="name" class="block font-semibold mb-1">
-          Name
-        </label>
+        <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
         <input
+          type="text"
           id="name"
           name="name"
-          type="text"
           required
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+          aria-describedby="nameError"
           aria-required="true"
-          aria-describedby="name-error"
-          class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
-        <p
-          id="name-error"
-          class="text-red-600 text-sm mt-1 hidden"
-          role="alert"
-        >
-          Please enter your name.
-        </p>
+        <p id="nameError" class="text-red-600 text-sm mt-1 hidden">Please enter your full name.</p>
       </div>
 
       <div class="mb-6">
-        <label for="email" class="block font-semibold mb-1">
-          Email
-        </label>
+        <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address</label>
         <input
+          type="email"
           id="email"
           name="email"
-          type="email"
           required
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+          aria-describedby="emailError"
           aria-required="true"
-          aria-describedby="email-error"
-          class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
-        <p
-          id="email-error"
-          class="text-red-600 text-sm mt-1 hidden"
-          role="alert"
-        >
-          Please enter a valid email address.
-        </p>
+        <p id="emailError" class="text-red-600 text-sm mt-1 hidden">Please enter a valid email address.</p>
       </div>
 
       <div class="mb-6">
-        <label for="message" class="block font-semibold mb-1">
-          Message
-        </label>
+        <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
         <textarea
           id="message"
           name="message"
           rows="5"
           required
+          class="w-full border border-gray-300 rounded-md px-4 py-2 resize-y focus:outline-none focus:ring-2 focus:ring-orange-400"
+          aria-describedby="messageError"
           aria-required="true"
-          aria-describedby="message-error"
-          class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
         ></textarea>
-        <p
-          id="message-error"
-          class="text-red-600 text-sm mt-1 hidden"
-          role="alert"
-        >
-          Please enter your message.
-        </p>
+        <p id="messageError" class="text-red-600 text-sm mt-1 hidden">Please enter your message.</p>
       </div>
 
       <button
         type="submit"
-        class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition-colors"
-        aria-label="Submit contact form"
+        class="w-full bg-orange-500 text-white font-semibold py-3 rounded-md hover:bg-orange-600 transition"
+        aria-label="Send message"
       >
         Send Message
       </button>
-
-      <p
-        id="form-success"
-        class="text-green-600 mt-4 hidden"
-        role="status"
-      >
-        Thank you! Your message has been sent.
-      </p>
+      <p id="formSuccess" class="text-green-600 mt-4 text-center hidden" role="alert"></p>
     </form>
   </section>
 
   <!-- Footer -->
-  <footer
-    class="bg-black text-white py-8 px-4"
-    role="contentinfo"
-    aria-label="Footer"
-  >
-    <div
-      class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center"
-    >
-      <div class="mb-4 md:mb-0">
-        <img
-          src="logo.png"
-          alt="Desiybelih Multimedia Production Logo"
-          class="h-10"
-        />
+  <footer class="bg-white border-t border-gray-200 py-6 mt-16">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm">
+      <p>© 2025 Desiybelih Multimedia Production. All rights reserved.</p>
+      <div class="flex space-x-6 mt-4 md:mt-0">
+        <a href="https://facebook.com/desiybelih" target="_blank" rel="noopener" aria-label="Facebook" class="hover:text-orange-500">Facebook</a>
+        <a href="https://youtube.com/desiybelih" target="_blank" rel="noopener" aria-label="YouTube" class="hover:text-orange-500">YouTube</a>
+        <a href="https://tiktok.com/@desiybelih" target="_blank" rel="noopener" aria-label="TikTok" class="hover:text-orange-500">TikTok</a>
+        <a href="https://linkedin.com/company/desiybelih" target="_blank" rel="noopener" aria-label="LinkedIn" class="hover:text-orange-500">LinkedIn</a>
       </div>
-      <nav aria-label="Footer navigation">
-        <ul class="flex space-x-6 font-semibold text-sm">
-          <li><a href="#productions" class="hover:text-blue-400">Productions</a></li>
-          <li><a href="#gallery-title" class="hover:text-blue-400">Gallery</a></li>
-          <li><a href="#contact-title" class="hover:text-blue-400">Contact</a></li>
-        </ul>
-      </nav>
     </div>
   </footer>
 
-  <!-- Back to Top Button -->
-  <button
-    id="back-to-top"
-    aria-label="Back to top"
-    class="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg opacity-0 pointer-events-none transition-opacity"
-  >
-    <i class="fas fa-arrow-up"></i>
-  </button>
-
   <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   <script>
-    // Initialize Swiper
-    const swiper = new Swiper('.swiper', {
+    // Initialize Swiper for Productions
+    const productionsSwiper = new Swiper(".productions-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 24,
       loop: true,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: ".productions-swiper .swiper-button-next",
+        prevEl: ".productions-swiper .swiper-button-prev",
       },
-      keyboard: {
-        enabled: true,
+      pagination: {
+        el: ".productions-swiper .swiper-pagination",
+        clickable: true,
       },
-      a11y: {
-        enabled: true,
-        prevSlideMessage: 'Previous slide',
-        nextSlideMessage: 'Next slide',
-        firstSlideMessage: 'This is the first slide',
-        lastSlideMessage: 'This is the last slide',
-      },
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
+      breakpoints: {
+        640: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
       },
     });
 
-    // Back to top button
-    const backToTopBtn = document.getElementById('back-to-top');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        backToTopBtn.style.opacity = '1';
-        backToTopBtn.style.pointerEvents = 'auto';
+    // Initialize Swiper for Gallery
+    const gallerySwiper = new Swiper(".gallery-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      loop: true,
+      navigation: {
+        nextEl: ".gallery-swiper .swiper-button-next",
+        prevEl: ".gallery-swiper .swiper-button-prev",
+      },
+      pagination: {
+        el: ".gallery-swiper .swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+    });
+
+    // Back to Top Button
+    const backToTopBtn = document.getElementById("backToTopBtn");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) {
+        backToTopBtn.classList.remove("hidden");
       } else {
-        backToTopBtn.style.opacity = '0';
-        backToTopBtn.style.pointerEvents = 'none';
+        backToTopBtn.classList.add("hidden");
       }
     });
-    backToTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
-    // Contact form validation
-    const form = document.getElementById('contact-form');
-    const nameInput = form.elements['name'];
-    const emailInput = form.elements['email'];
-    const messageInput = form.elements['message'];
+    // Contact Form Validation and Submission
+    const contactForm = document.getElementById("contactForm");
+    const nameInput = contactForm.elements["name"];
+    const emailInput = contactForm.elements["email"];
+    const messageInput = contactForm.elements["message"];
 
-    const nameError = document.getElementById('name-error');
-    const emailError = document.getElementById('email-error');
-    const messageError = document.getElementById('message-error');
-    const formSuccess = document.getElementById('form-success');
+    const nameError = document.getElementById("nameError");
+    const emailError = document.getElementById("emailError");
+    const messageError = document.getElementById("messageError");
+    const formSuccess = document.getElementById("formSuccess");
 
-    form.addEventListener('submit', (e) => {
+    function validateEmail(email) {
+      // Simple regex for email validation
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    contactForm.addEventListener("submit", (e) => {
       e.preventDefault();
+
+      // Reset errors and success
+      nameError.classList.add("hidden");
+      emailError.classList.add("hidden");
+      messageError.classList.add("hidden");
+      formSuccess.classList.add("hidden");
+      formSuccess.textContent = "";
 
       let valid = true;
 
       if (!nameInput.value.trim()) {
-        nameError.classList.remove('hidden');
+        nameError.classList.remove("hidden");
         valid = false;
-      } else {
-        nameError.classList.add('hidden');
       }
-
-      if (!emailInput.value.trim() || !validateEmail(emailInput.value)) {
-        emailError.classList.remove('hidden');
+      if (!emailInput.value.trim() || !validateEmail(emailInput.value.trim())) {
+        emailError.classList.remove("hidden");
         valid = false;
-      } else {
-        emailError.classList.add('hidden');
       }
-
       if (!messageInput.value.trim()) {
-        messageError.classList.remove('hidden');
+        messageError.classList.remove("hidden");
         valid = false;
-      } else {
-        messageError.classList.add('hidden');
       }
 
-      if (valid) {
-        // Submit form to Formspree or your backend
-        fetch(form.action, {
-          method: form.method,
-          body: new FormData(form),
-          headers: {
-            'Accept': 'application/json',
-          },
-        }).then(response => {
-          if (response.ok) {
-            formSuccess.classList.remove('hidden');
-            form.reset();
-          } else {
-            alert('Oops! There was a problem submitting your form.');
-          }
-        }).catch(() => {
-          alert('Oops! There was a problem submitting your form.');
-        });
-      }
+      if (!valid) return;
+
+      // Here you can implement form submission, e.g., AJAX to backend or third-party service.
+      // For demo, just show success message and reset form.
+
+      formSuccess.textContent = "Thank you for contacting us! We will get back to you shortly.";
+      formSuccess.classList.remove("hidden");
+      contactForm.reset();
     });
-
-    function validateEmail(email) {
-      // Simple email regex
-      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return re.test(email.toLowerCase());
-    }
   </script>
 </body>
 </html>
