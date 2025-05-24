@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Desiybelih Multimedia Production</title>
 
   <!-- SEO Meta Tags -->
@@ -40,7 +40,6 @@
         transform: translateY(0);
       }
     }
-    /* Add some spacing between footer links */
     footer nav ul li {
       margin-bottom: 0.5rem;
     }
@@ -78,7 +77,7 @@
       aria-label="Desiybelih Multimedia animated logo"
     ></lottie-player>
 
-    <!-- Swiper Slideshow below the animation -->
+    <!-- Swiper Slideshow -->
     <div
       class="swiper w-full max-w-5xl h-96 mt-8 rounded-lg overflow-hidden shadow-lg"
       role="region"
@@ -260,196 +259,249 @@
   </section>
 
   <!-- Contact Form -->
-  <section class="py-12 bg-gray-100 fade-in" aria-labelledby="contact-title">
-    <h2 id="contact-title" class="text-3xl font-bold text-center mb-6">
+  <section class="py-12 bg-gray-100" aria-labelledby="contact-title">
+    <h2
+      id="contact-title"
+      class="text-3xl font-bold text-center mb-8"
+    >
       Contact Us
     </h2>
     <form
       id="contact-form"
-      class="max-w-2xl mx-auto space-y-4"
-      aria-describedby="contact-desc"
+      action="https://formspree.io/f/your-form-id"
+      method="POST"
+      class="max-w-xl mx-auto px-4"
       novalidate
-      method="post"
-      action="#"
+      aria-describedby="form-instructions"
     >
-      <p id="contact-desc" class="sr-only">Use this form to send us a message</p>
+      <p id="form-instructions" class="sr-only">
+        All fields are required. Please fill out the form and submit to get in touch.
+      </p>
 
-      <label for="name" class="sr-only">Your Name</label>
-      <input
-        id="name"
-        name="name"
-        type="text"
-        placeholder="Your Name"
-        class="w-full px-4 py-2 border border-gray-300 rounded"
-        required
-        aria-required="true"
-        aria-invalid="false"
-      />
-      <span id="name-error" class="text-red-600 text-sm hidden">Please enter your name.</span>
+      <div class="mb-6">
+        <label for="name" class="block font-semibold mb-1">
+          Name
+        </label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          required
+          aria-required="true"
+          aria-describedby="name-error"
+          class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <p
+          id="name-error"
+          class="text-red-600 text-sm mt-1 hidden"
+          role="alert"
+        >
+          Please enter your name.
+        </p>
+      </div>
 
-      <label for="email" class="sr-only">Your Email</label>
-      <input
-        id="email"
-        name="email"
-        type="email"
-        placeholder="Your Email"
-        class="w-full px-4 py-2 border border-gray-300 rounded"
-        required
-        aria-required="true"
-        aria-invalid="false"
-      />
-      <span id="email-error" class="text-red-600 text-sm hidden">Please enter a valid email.</span>
+      <div class="mb-6">
+        <label for="email" class="block font-semibold mb-1">
+          Email
+        </label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          required
+          aria-required="true"
+          aria-describedby="email-error"
+          class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <p
+          id="email-error"
+          class="text-red-600 text-sm mt-1 hidden"
+          role="alert"
+        >
+          Please enter a valid email address.
+        </p>
+      </div>
 
-      <label for="message" class="sr-only">Your Message</label>
-      <textarea
-        id="message"
-        name="message"
-        placeholder="Your Message"
-        class="w-full px-4 py-2 border border-gray-300 rounded h-32"
-        required
-        aria-required="true"
-        aria-invalid="false"
-      ></textarea>
-      <span id="message-error" class="text-red-600 text-sm hidden">Please enter your message.</span>
+      <div class="mb-6">
+        <label for="message" class="block font-semibold mb-1">
+          Message
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          required
+          aria-required="true"
+          aria-describedby="message-error"
+          class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        ></textarea>
+        <p
+          id="message-error"
+          class="text-red-600 text-sm mt-1 hidden"
+          role="alert"
+        >
+          Please enter your message.
+        </p>
+      </div>
 
       <button
         type="submit"
-        class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition-colors"
+        aria-label="Submit contact form"
       >
         Send Message
       </button>
+
+      <p
+        id="form-success"
+        class="text-green-600 mt-4 hidden"
+        role="status"
+      >
+        Thank you! Your message has been sent.
+      </p>
     </form>
-
-    <div class="max-w-2xl mx-auto mt-8 text-center text-gray-700">
-      <p><strong>Address:</strong> Addis Ababa, Subcity Gulele, 6kilo</p>
-      <p><strong>Phone:</strong> +251911095104 | +251924828846</p>
-    </div>
   </section>
-
-  <!-- Back to Top Button -->
-  <button
-    id="backToTopBtn"
-    aria-label="Back to top"
-    class="fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 hidden"
-  >
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
 
   <!-- Footer -->
   <footer
-    class="bg-blue-600 text-white p-8 mt-12"
+    class="bg-black text-white py-8 px-4"
     role="contentinfo"
-    aria-label="Footer with navigation and contact"
+    aria-label="Footer"
   >
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between">
-      <div>
-        <h3 class="font-bold mb-4">Desiybelih Multimedia</h3>
-        <p>Creativity. Ethics. Speed.</p>
-        <p class="mt-2">&copy; 2025 Desiybelih Multimedia Production</p>
+    <div
+      class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center"
+    >
+      <div class="mb-4 md:mb-0">
+        <img
+          src="logo.png"
+          alt="Desiybelih Multimedia Production Logo"
+          class="h-10"
+        />
       </div>
-      <nav aria-label="Footer navigation" class="mt-6 md:mt-0">
-        <ul class="space-y-2">
-          <li><a href="#productions-title" class="hover:underline focus:underline">Our Productions</a></li>
-          <li><a href="#gallery-title" class="hover:underline focus:underline">Photo Gallery</a></li>
-          <li><a href="#contact-title" class="hover:underline focus:underline">Contact Us</a></li>
+      <nav aria-label="Footer navigation">
+        <ul class="flex space-x-6 font-semibold text-sm">
+          <li><a href="#productions" class="hover:text-blue-400">Productions</a></li>
+          <li><a href="#gallery-title" class="hover:text-blue-400">Gallery</a></li>
+          <li><a href="#contact-title" class="hover:text-blue-400">Contact</a></li>
         </ul>
       </nav>
     </div>
   </footer>
 
+  <!-- Back to Top Button -->
+  <button
+    id="back-to-top"
+    aria-label="Back to top"
+    class="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg opacity-0 pointer-events-none transition-opacity"
+  >
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-  <!-- Custom JS -->
   <script>
     // Initialize Swiper
-    const swiper = new Swiper(".swiper", {
+    const swiper = new Swiper('.swiper', {
       loop: true,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
       keyboard: {
         enabled: true,
       },
       a11y: {
         enabled: true,
+        prevSlideMessage: 'Previous slide',
+        nextSlideMessage: 'Next slide',
+        firstSlideMessage: 'This is the first slide',
+        lastSlideMessage: 'This is the last slide',
+      },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
       },
     });
 
-    // Back to top button logic
-    const backToTopBtn = document.getElementById("backToTopBtn");
-    window.addEventListener("scroll", () => {
+    // Back to top button
+    const backToTopBtn = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
       if (window.scrollY > 300) {
-        backToTopBtn.classList.remove("hidden");
+        backToTopBtn.style.opacity = '1';
+        backToTopBtn.style.pointerEvents = 'auto';
       } else {
-        backToTopBtn.classList.add("hidden");
+        backToTopBtn.style.opacity = '0';
+        backToTopBtn.style.pointerEvents = 'none';
       }
     });
-    backToTopBtn.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
     // Contact form validation
-    const form = document.getElementById("contact-form");
-    const nameInput = form.elements["name"];
-    const emailInput = form.elements["email"];
-    const messageInput = form.elements["message"];
+    const form = document.getElementById('contact-form');
+    const nameInput = form.elements['name'];
+    const emailInput = form.elements['email'];
+    const messageInput = form.elements['message'];
 
-    const nameError = document.getElementById("name-error");
-    const emailError = document.getElementById("email-error");
-    const messageError = document.getElementById("message-error");
+    const nameError = document.getElementById('name-error');
+    const emailError = document.getElementById('email-error');
+    const messageError = document.getElementById('message-error');
+    const formSuccess = document.getElementById('form-success');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      let valid = true;
+
+      if (!nameInput.value.trim()) {
+        nameError.classList.remove('hidden');
+        valid = false;
+      } else {
+        nameError.classList.add('hidden');
+      }
+
+      if (!emailInput.value.trim() || !validateEmail(emailInput.value)) {
+        emailError.classList.remove('hidden');
+        valid = false;
+      } else {
+        emailError.classList.add('hidden');
+      }
+
+      if (!messageInput.value.trim()) {
+        messageError.classList.remove('hidden');
+        valid = false;
+      } else {
+        messageError.classList.add('hidden');
+      }
+
+      if (valid) {
+        // Submit form to Formspree or your backend
+        fetch(form.action, {
+          method: form.method,
+          body: new FormData(form),
+          headers: {
+            'Accept': 'application/json',
+          },
+        }).then(response => {
+          if (response.ok) {
+            formSuccess.classList.remove('hidden');
+            form.reset();
+          } else {
+            alert('Oops! There was a problem submitting your form.');
+          }
+        }).catch(() => {
+          alert('Oops! There was a problem submitting your form.');
+        });
+      }
+    });
 
     function validateEmail(email) {
+      // Simple email regex
       const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       return re.test(email.toLowerCase());
     }
-
-    form.addEventListener("submit", function (e) {
-      let valid = true;
-
-      // Name validation
-      if (!nameInput.value.trim()) {
-        nameError.classList.remove("hidden");
-        nameInput.setAttribute("aria-invalid", "true");
-        valid = false;
-      } else {
-        nameError.classList.add("hidden");
-        nameInput.setAttribute("aria-invalid", "false");
-      }
-
-      // Email validation
-      if (!validateEmail(emailInput.value.trim())) {
-        emailError.classList.remove("hidden");
-        emailInput.setAttribute("aria-invalid", "true");
-        valid = false;
-      } else {
-        emailError.classList.add("hidden");
-        emailInput.setAttribute("aria-invalid", "false");
-      }
-
-      // Message validation
-      if (!messageInput.value.trim()) {
-        messageError.classList.remove("hidden");
-        messageInput.setAttribute("aria-invalid", "true");
-        valid = false;
-      } else {
-        messageError.classList.add("hidden");
-        messageInput.setAttribute("aria-invalid", "false");
-      }
-
-      if (!valid) {
-        e.preventDefault();
-        // Optionally set focus to first error
-        if (nameError.classList.contains("hidden") === false) nameInput.focus();
-        else if (emailError.classList.contains("hidden") === false) emailInput.focus();
-        else if (messageError.classList.contains("hidden") === false) messageInput.focus();
-      }
-    });
   </script>
 </body>
 </html>
