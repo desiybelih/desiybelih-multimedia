@@ -328,3 +328,128 @@
 
   <!-- Back to Top Button -->
   <button
+    id="backToTopBtn"
+    aria-label="Back to top"
+    class="fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 hidden"
+  >
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer
+    class="bg-blue-600 text-white p-8 mt-12"
+    role="contentinfo"
+    aria-label="Footer with navigation and contact"
+  >
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between">
+      <div>
+        <h3 class="font-bold mb-4">Desiybelih Multimedia</h3>
+        <p>Creativity. Ethics. Speed.</p>
+        <p class="mt-2">&copy; 2025 Desiybelih Multimedia Production</p>
+      </div>
+      <nav aria-label="Footer navigation" class="mt-6 md:mt-0">
+        <ul class="space-y-2">
+          <li><a href="#productions-title" class="hover:underline focus:underline">Our Productions</a></li>
+          <li><a href="#gallery-title" class="hover:underline focus:underline">Photo Gallery</a></li>
+          <li><a href="#contact-title" class="hover:underline focus:underline">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script>
+    // Initialize Swiper
+    const swiper = new Swiper(".swiper", {
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      keyboard: {
+        enabled: true,
+      },
+      a11y: {
+        enabled: true,
+      },
+    });
+
+    // Back to top button logic
+    const backToTopBtn = document.getElementById("backToTopBtn");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.remove("hidden");
+      } else {
+        backToTopBtn.classList.add("hidden");
+      }
+    });
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Contact form validation
+    const form = document.getElementById("contact-form");
+    const nameInput = form.elements["name"];
+    const emailInput = form.elements["email"];
+    const messageInput = form.elements["message"];
+
+    const nameError = document.getElementById("name-error");
+    const emailError = document.getElementById("email-error");
+    const messageError = document.getElementById("message-error");
+
+    function validateEmail(email) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(email.toLowerCase());
+    }
+
+    form.addEventListener("submit", function (e) {
+      let valid = true;
+
+      // Name validation
+      if (!nameInput.value.trim()) {
+        nameError.classList.remove("hidden");
+        nameInput.setAttribute("aria-invalid", "true");
+        valid = false;
+      } else {
+        nameError.classList.add("hidden");
+        nameInput.setAttribute("aria-invalid", "false");
+      }
+
+      // Email validation
+      if (!validateEmail(emailInput.value.trim())) {
+        emailError.classList.remove("hidden");
+        emailInput.setAttribute("aria-invalid", "true");
+        valid = false;
+      } else {
+        emailError.classList.add("hidden");
+        emailInput.setAttribute("aria-invalid", "false");
+      }
+
+      // Message validation
+      if (!messageInput.value.trim()) {
+        messageError.classList.remove("hidden");
+        messageInput.setAttribute("aria-invalid", "true");
+        valid = false;
+      } else {
+        messageError.classList.add("hidden");
+        messageInput.setAttribute("aria-invalid", "false");
+      }
+
+      if (!valid) {
+        e.preventDefault();
+        // Optionally set focus to first error
+        if (nameError.classList.contains("hidden") === false) nameInput.focus();
+        else if (emailError.classList.contains("hidden") === false) emailInput.focus();
+        else if (messageError.classList.contains("hidden") === false) messageInput.focus();
+      }
+    });
+  </script>
+</body>
+</html>
