@@ -176,6 +176,11 @@
         Send Message
       </button>
     </form>
+
+    <div class="max-w-2xl mx-auto mt-8 text-center text-gray-700">
+      <p><strong>Address:</strong> Addis Ababa, Subcity Gulele, 6kilo</p>
+      <p><strong>Phone:</strong> +251911095104 | +251924828846</p>
+    </div>
   </section>
 
   <!-- Back to Top Button -->
@@ -195,4 +200,37 @@
       <div class="mb-4 md:mb-0">
         <h3 class="font-bold">Desiybelih Multimedia</h3>
         <p>Creativity. Ethics. Speed.</p>
+        <p class="mt-2">Address - Addis Ababa, Subcity Gulele, 6kilo</p>
+        <p class="mt-1">Phone: +251911095104 | +251924828846</p>
+      </div>
+      <nav aria-label="Footer navigation" class="mb-4 md:mb-0">
+        <ul class="flex flex-col md:flex-row md:space-x-6 text-sm">
+          <li><a href="#productions-title" class="hover:underline">Productions</a></li>
+          <li><a href="#gallery-title" class="hover:underline">Gallery</a></li>
+          <li><a href="#contact-title" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="text-sm text-gray-400 mt-4 md:mt-0">
+        &copy; 2025 Desiybelih Multimedia Production. All rights reserved.
+      </div>
+    </div>
+  </footer>
 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+
+</body>
+</html>
