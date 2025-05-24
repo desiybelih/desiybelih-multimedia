@@ -309,5 +309,40 @@
     >
       <div class="mb-4 md:mb-0">
         <h3 class="font-bold">Desiybelih Multimedia</h3>
-        <p>Creativity. Ethics
+        <p>Creativity. Ethics. Speed.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <ul class="flex space-x-6">
+          <li><a href="#productions-title" class="hover:underline">Productions</a></li>
+          <li><a href="#gallery-title" class="hover:underline">Gallery</a></li>
+          <li><a href="#contact-title" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p>© 2025 Desiybelih Multimedia Production. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 7000,
+        disableOnInteraction: false,
+      },
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+      },
+      a11y: true,
+    });
+  </script>
+</body>
+</html>
