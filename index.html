@@ -1,0 +1,177 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desiybelih Multimedia Production</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+  <!-- Hero Slideshow -->
+  <section class="relative w-full h-screen overflow-hidden">
+    <div class="absolute top-4 left-6 text-xl font-semibold text-white bg-black bg-opacity-50 px-3 py-1 rounded z-10">Creativity. Ethics. Speed.</div>
+    <div class="absolute top-4 right-6 z-10">
+      <img src="logo.png" alt="Desiybelih Logo" class="h-12" />
+    </div>
+    <div class="swiper h-full">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="slide1.jpg" class="w-full h-full object-cover" /></div>
+        <div class="swiper-slide"><img src="slide2.jpg" class="w-full h-full object-cover" /></div>
+        <div class="swiper-slide"><img src="slide3.jpg" class="w-full h-full object-cover" /></div>
+        <div class="swiper-slide"><img src="slide4.jpg" class="w-full h-full object-cover" /></div>
+        <div class="swiper-slide"><img src="slide5.jpg" class="w-full h-full object-cover" /></div>
+      </div>
+      <!-- Swiper Navigation Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+  <!-- Our Productions -->
+  <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto fade-in">
+    <h2 class="text-3xl font-bold mb-6 text-center">Our Productions</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="shadow-xl rounded-2xl overflow-hidden">
+        <iframe class="w-full h-64" src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+        <div class="p-4">Ayd Ashenafi</div>
+      </div>
+      <div class="shadow-xl rounded-2xl overflow-hidden">
+        <iframe class="w-full h-64" src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+        <div class="p-4">Water Management</div>
+      </div>
+      <div class="shadow-xl rounded-2xl overflow-hidden">
+        <iframe class="w-full h-64" src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
+        <div class="p-4">Project Mercy</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Slideshow -->
+  <section class="py-10 bg-gray-100 fade-in">
+    <h2 class="text-3xl font-bold text-center mb-6">Photo Gallery</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4 sm:px-6 lg:px-8">
+      <img src="photo1.jpg" class="rounded-xl shadow" />
+      <img src="photo2.jpg" class="rounded-xl shadow" />
+      <img src="photo3.jpg" class="rounded-xl shadow" />
+      <img src="photo4.jpg" class="rounded-xl shadow" />
+      <img src="photo5.jpg" class="rounded-xl shadow" />
+      <img src="photo6.jpg" class="rounded-xl shadow" />
+      <img src="photo7.jpg" class="rounded-xl shadow" />
+      <img src="photo8.jpg" class="rounded-xl shadow" />
+      <img src="photo9.jpg" class="rounded-xl shadow" />
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="py-12 bg-white text-center fade-in">
+    <h2 class="text-2xl font-bold mb-4">Client Testimonial</h2>
+    <p class="max-w-xl mx-auto italic">"We are very satisfied with Desiybelih Multimedia's high-quality storytelling and professionalism."</p>
+    <div class="mt-4">
+      <img src="self-help-africa-logo.png" class="h-12 inline-block" alt="Self Help Africa Logo" />
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="py-12 bg-gray-100 fade-in">
+    <h2 class="text-3xl font-bold text-center mb-6">Contact Us</h2>
+    <form class="max-w-2xl mx-auto space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border border-gray-300 rounded" required />
+      <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border border-gray-300 rounded" required />
+      <textarea placeholder="Your Message" class="w-full px-4 py-2 border border-gray-300 rounded h-32" required></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 fade-in">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between px-4 sm:px-6 lg:px-8">
+      <div class="mb-4 md:mb-0">
+        <h3 class="font-bold">Desiybelih Multimedia</h3>
+        <p>Creativity. Ethics. Speed.</p>
+        <p class="mt-2">Contact us:</p>
+        <p class="text-sm">Phone: +251911095104 | +251924828846</p>
+        <p class="text-sm">Email: desmen095104@gmail.com</p>
+      </div>
+      <div>
+        <h4 class="font-bold">Quick Links</h4>
+        <ul>
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">Productions</a></li>
+          <li><a href="#" class="hover:underline">Gallery</a></li>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>
+ Photo Gallery Section -->
+<section id="photo-gallery">
+  <div class="container">
+    <h2 class="section-title">Photo Gallery</h2>
+    <div class="gallery-grid">
+      <a href="images/43828214_2005031649558062_1246120873295872000_n.jpg" data-lightbox="gallery" data-title="Event Moment 1">
+        <img src="images/43828214_2005031649558062_1246120873295872000_n.jpg" alt="Photo 1">
+      </a>
+      <a href="images/48378293_2098535383541021_4239853227685707776_n.jpg" data-lightbox="gallery" data-title="Event Moment 2">
+        <img src="images/48378293_2098535383541021_4239853227685707776_n.jpg" alt="Photo 2">
+      </a>
+      <a href="images/61711096_2348114805249743_9019528924731801600_n.jpg" data-lightbox="gallery" data-title="Event Moment 3">
+        <img src="images/61711096_2348114805249743_9019528924731801600_n.jpg" alt="Photo 3">
+      </a>
+      <a href="images/70287812_2537139299680625_1492389410375729152_n.jpg" data-lightbox="gallery" data-title="Event Moment 4">
+        <img src="images/70287812_2537139299680625_1492389410375729152_n.jpg" alt="Photo 4">
+      </a>
+      <a href="images/461393195_2673800039448683_1577238996929341575_n.jpg" data-lightbox="gallery" data-title="Event Moment 5">
+        <img src="images/461393195_2673800039448683_1577238996929341575_n.jpg" alt="Photo 5">
+      </a>
+      <a href="images/87812084_2885051771556041_8597188684388761600_n.jpg" data-lightbox="gallery" data-title="Event Moment 6">
+        <img src="images/87812084_2885051771556041_8597188684388761600_n.jpg" alt="Photo 6">
+      </a>
+      <a href="images/465039736_8828163640578128_1545606115888916416_n.jpg" data-lightbox="gallery" data-title="Event Moment 7">
+        <img src="images/465039736_8828163640578128_1545606115888916416_n.jpg" alt="Photo 7">
+      </a>
+      <a href="images/465456329_8853167771411048_4946229566254742786_n.jpg" data-lightbox="gallery" data-title="Event Moment 8">
+        <img src="images/465456329_8853167771411048_4946229566254742786_n.jpg" alt="Photo 8">
+      </a>
+      <a href="images/53030612_2203882149673010_3661528953497059328_n.jpg" data-lightbox="gallery" data-title="Event Moment 9">
+        <img src="images/53030612_2203882149673010_3661528953497059328_n.jpg" alt="Photo 9">
+      </a>
+    </div>
+  </div>
+</section>
